@@ -1,0 +1,88 @@
+body {
+  /* Default text font */
+  font-family: 'Roboto', sans-serif;
+
+  /* Align body to center */
+  margin: 0 auto;
+
+  /* Limit text width for easier reading on wide screens */
+  max-width: 40em;
+
+  /* Leave space on edges for small-screened devices */
+  padding: 1em;
+}
+
+header, footer {
+  /* Center-align header and footer */
+  text-align: center;
+}
+
+h1, h2 {
+  /* Non-bold main headers */
+  font-weight: normal;
+}
+
+h3 {
+  /* Bold, non-italic, normal sized title */
+  font-weight: bold;
+  font-style: normal;
+  font-size: inherit;
+
+  /* No space between title and sub-title */
+  margin-bottom: 0;
+}
+
+h4 {
+  /* Non-bold, italic, normal sized sub-title */
+  font-weight: normal;
+  font-style: italic;
+  font-size: inherit;
+
+  /* No space around sub-title */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  /* Divider between top-level sections */
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+a {
+  /* No text decoration and static color */
+  text-decoration: none;
+  color: #0000EE;
+
+  /* Animate when changing transform */
+  display: inline-block;
+  margin: 0 auto;
+  transition: transform .2s ease-in-out;
+}
+
+a:visited {
+  /* Don't change color even if visited */
+  color: #0000EE;
+}
+
+a:hover {
+  /* Scale up a little on hover */
+  transform: scale(1.05);
+}
+
+@media print {
+  /* Expand to full page in printed pages, fix font size */
+  body {
+      font-size: 12px;
+      margin: initial;
+      max-width: initial;
+      padding: initial;
+  }
+
+  /* Hide footer in printed pages */
+  footer {
+      display: none;
+  }
+}
